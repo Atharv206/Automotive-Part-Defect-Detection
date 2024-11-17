@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen India</title>
+    <!-- In index.html -->
+     
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Volkswagen Logo" id="loading-logo">
+        <h1>Volkswagen</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display:none;">
+        <header>
+            <div class="navbar">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Volkswagen" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#models">Models</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#defect">Defect Detection</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <div class="hero-content">
+                <div class="scrollable-images">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-gt-plus-sport?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTgwMCZoZWk9NjAwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjQ3M2E=" alt="Car 1">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/volkswagen-big-rush-image?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTE5MjAmaGVpPTEwODAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmM2E1Nw==" alt="Car 2">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-gt-line?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTgwMCZoZWk9NjAwJmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjQ3M2E=" alt="Car 3">
+                    <img src="https://www.wsupercars.com/thumbnails/Volkswagen/2021-Volkswagen-Arteon-R-003.jpg" alt="Car 4">
+                    <img src="https://www.wsupercars.com/thumbnails/Volkswagen/2023-Volkswagen-ID-Buzz-010.jpg" alt="Car 5">
+                    <img src="https://www.wsupercars.com/thumbnails/Volkswagen/2018-Volkswagen-ID-R-Pikes-Peak-005.jpg" alt="Car 6">
+                    <img src="https://www.wsupercars.com/thumbnails/Volkswagen/2007-Volkswagen-GTI-W12-Concept-003.jpg" alt="Car 7">
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h1>Welcome to Volkswagen</h1>
+            <p>Experience Innovation, Explore New Possibilities</p>
+        </section>
+
+        <section id="models">
+            <h2>Our Models</h2>
+            <div class="model-cards">
+                <div class="model-card">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-chrome-homepage?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Model 1">
+                    <p>Virtus Sport</p>
+                </div>
+                <div class="model-card">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-chrome-overview-image?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Model 2">
+                    <p>Virtus Chrome</p>
+                </div>
+                <div class="model-card">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/taigun_sport?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Model 3">
+                    <p>Vaigun Sport</p>
+                </div>
+                <div class="model-card">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/TaigunChrome?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Model 4">
+                    <p>Taigun Chrome</p>
+                </div>
+                <div class="model-card">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/Tiguan-78?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Model 5">
+                    <p>Tiguan</p>
+                </div>
+                <div class="model-card">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/virtus-chrome-overview-image?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Model 6">
+                    <p>Virtus Chrome</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="our-services"><h2>Our Services</h2></div>
+            
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/schedule-a-test-drive?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Test Drive">
+                    <p>Schedule a Test Drive</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/find-a-dealer-near-you?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Find Dealer">
+                    <p>Find a dealer near you</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/services-and-maintenance?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Services & Maintenance">
+                    <p>Services and Maintenance</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/hp_filter-module-book-your-vw-1200x1200?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Book Online">
+                    <p>Book your Volkswagen Online</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/parts-and-products?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Parts & Products">
+                    <p>Parts and Products</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/service-benifits-4years?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEyMDAmaGVpPTEyMDAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmNTA0Mg==" alt="Service Benefits">
+                    <p>Service Benefits</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://assets.volkswagen.com/is/image/volkswagenag/november-service-offers?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTEwODAmaGVpPTEwODAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmM2Q5YQ==" alt="Service Offers">
+                    <p>Service Offers</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="defect">
+            <h2>Defect Detection</h2>
+            <form id="defect-form" action="{{ url_for('check_defect') }}" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" required>
+                <button type="submit">Check Defect</button>
+            </form>
+        
+            <!-- Image Preview -->
+            <!-- Display Uploaded Image Preview -->
+        {% if image_path %}
+        <div id="uploaded-image">
+            <h3>Uploaded Image:</h3>
+            <img src="{{ image_path }}" alt="Uploaded Image" style="width: 300px; height: auto; margin-top: 10px;">
+        </div>
+    {% endif %}
+            <div id="result" style="margin-top: 20px;"></div>
+
+            <!-- Display the response or error if available -->
+            {% if response %}
+            <div id="defect-result">
+                <h3>Defect Analysis:</h3>
+                <p>{{ response|safe }}</p>
+            </div>
+            {% endif %}
+            {% if error %}
+            <div id="error-message">
+                <p>{{ error }}</p>
+            </div>
+            {% endif %}
+        </section>
+
+        <footer>
+            <div id="contact">
+                <p>Visit us: <a href="https://www.volkswagen.co.in" target="_blank">Volkswagen India</a></p>
+                <p>&copy; 2024 Volkswagen India. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

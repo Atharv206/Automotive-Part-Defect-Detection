@@ -1,0 +1,17 @@
+<!-- result.html - Partial HTML for AJAX Response -->
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<!-- result.html - Centered Content -->
+<div class="center-container">
+    <div id="uploaded-image" class="fade-in">
+        <h3 class="title">Uploaded Image:</h3>
+        <img src="{{ image_path }}" alt="Uploaded Image" class="image-style">
+    </div>
+
+    <div id="defect-result" class="slide-in">
+        <h3 class="title">Defect Analysis:</h3>
+        <p class="result-text">{{ response|safe }}</p>
+    </div>
+</div>
